@@ -1,0 +1,75 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.container {
+    margin: 20px auto;
+    width: 80%;
+}
+
+#search-bar {
+    padding: 10px;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+#clocks, #dynamic-clocks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.clock {
+    width: 100px;
+    height: 100px;
+    border: 5px solid black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.clock::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hand {
+    width: 50%;
+    height: 2px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: 0% 50%;
+    transform: rotate(90deg);
+}
+
+.clock-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.digital-clock {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.country-name {
+    font-size: 12px;
+    margin-top: 5px;
+    color: gray;
+    text-transform: uppercase;
+    font-weight: bold;
+}

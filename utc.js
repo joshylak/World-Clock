@@ -1,0 +1,22 @@
+const countryUTCOffsets = {
+    usa: -4,
+    nigeria: 1,
+    china: 8,
+    london: 0,
+    japan: 9,
+    india: 5.5,
+    australia: 10,
+    brazil: -3,
+    canada: -5,
+    germany: 1,
+    france: 1,
+    italy: 1,
+    south_africa: 2,
+    russia: 3,
+    mexico: -6,
+    argentina: -3,
+    south_korea: 9,
+    saudi_arabia: 3,
+    indonesia: 7,
+    // Add more countries and their UTC offsets as needed
+};
